@@ -1,9 +1,9 @@
+/*
 body {
   margin: 0;
-  padding: 30px;
-  font-family: $font-family-sans-serif;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  padding: 250px;
+  font-family: $font-family-space;
+  background-color: $bg-color;
 }
 
 .uoc-logo {
@@ -19,3 +19,47 @@ body {
   font-weight: 700;
   color: $uoc-corporate;
 }
+
+*/
+
+body,
+footer {
+  margin: 0;
+  padding: 0 30px;
+  background-color: $bg-color;
+  font-family: $font-family-space;
+
+  @media (min-width: $mediaLarge) {
+    padding: 0;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #676;
+  height: 100vh;
+  
+  
+  @media (min-width: $mediaLarge) {
+    // background-image: url("src/assets/images/bg-desktop.jpg");
+    // background-image: url("../../images/bg-desktop.jpg");
+  }
+}
+
+.nav--main {
+  display: flex;
+}
+
+.nav--main--link {
+  list-style: none;
+}
+
+/*
+
+  @media (min-width: $mediaDesktops) {
+    color: #f0f;
+  }
+}
+*/

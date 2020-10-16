@@ -1,8 +1,25 @@
 @use "sass:color";
 
+/* Importamos tipografia google font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Space+Mono:wght@400;700&display=swap");
+$font-family-roboto: "Roboto", sans-serif;
+$font-family-space: "Space Mono", monospace;
+
+/*
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
 $uoc-corporate: #000078;
 $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
+$uoc-test: #73ed00;
+*/
+
+/* declaramos variales media query */
+$mediaLarge: 1200px;
+$mediaDesktops: 992px;
+$mediaTablets: 768px;
+$mediaPhones: 576px;
+
+$bg-color: #e7e4cd;
+$bg-complementary: #ff0;

@@ -6,12 +6,9 @@
 
 /**
  * Import npm dependencies
- * see: https://en.parceljs.org/module_resolution.html
- * see commented examples below
  */
 
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
-@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 
 /**
  * Import layouts
@@ -23,3 +20,4 @@
 /**
  * Do NOT include anything else in this file!
  */
+ 
