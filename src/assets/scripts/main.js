@@ -1,15 +1,7 @@
-/**
- * Import dependencies from node_modules
- * see commented examples below
- */
+/* Importem dependencies jquery i fontawesome */
+import "@fortawesome/fontawesome-free/css/all.css"
+import "./import-jquery";
 
-// import 'some-node-module';
-// import SomeModule from 'some-node-module';
-
-/**
- * Write any other JavaScript below
- */
-
-+( function() {
-  console.log('Hello, UOC!');
-} )();
+  $("p").click(function(){
+    $(this).hide();
+  });

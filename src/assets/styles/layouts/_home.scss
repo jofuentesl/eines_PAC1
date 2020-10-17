@@ -28,10 +28,6 @@ footer {
   background-color: $bg-color;
   font-family: $font-family-space;
   font-size: 16px;
-
-  @media (min-width: $mediaLarge) {
-    padding: 0;
-  }
 }
 
 .header {
@@ -68,6 +64,10 @@ footer {
 
 .nav__link--style:hover {
   border-bottom: 1px solid #ff0;
+}
+
+.nav__icon {
+  display: none;
 }
 
 /*
