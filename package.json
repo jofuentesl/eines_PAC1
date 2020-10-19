@@ -10,7 +10,6 @@
     "dev": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean stylelint parcel:build",
     "build2": "parcel build src/index.html --public-url prod",
-
     "stylelint": "stylelint src/**/*.scss",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },

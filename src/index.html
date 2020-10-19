@@ -11,12 +11,9 @@
     <title>EINES-2 PAC1 -Jordi Fuentes</title>
   </head>
   <body>
-    <header class="header header--margins">
-      <div>
-        <h1 class="title">CV Jordi Fuentes Leiva</h1>
-      </div>
-      <div>
-        <nav class="nav">
+    <header class="header">
+      <div class="nav">
+        <nav class="nav__menu">
           <!--<label for="menuToggle" class="nav__icon"><i class="fa fa-bars"></i></label>-->
           <ul class="nav__list">
             <li class="nav__item">
@@ -29,44 +26,148 @@
               <a class="nav__link nav__link--style" href="#habilidades">Habilidades</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link nav__link--style" href="#porfolio">Porfolio</a>
-            </li>
-            <li class="nav__item">
               <a class="nav__link nav__link--style" href="#contacto">Contacto</a>
             </li>
           </ul>
         </nav>
       </div>
+      <div class="subtitle">
+        <h1>Jordi Fuentes</h1>
+        <h2>Desarrollo web profesional</h2>
+      </div>
     </header>
    
-  <section id="sobremi" class="sobre">
-    <header>
+  <section id="sobremi" class="section">
+    <header class="header__section">
+      <i class="fas fa-user header__icon header__icon--size"></i>
       <h2>Sobre mi</h2>
     </header>
-      <p>Soy especialista en el diseño y desarrollo de aplicaciones web. Sin duda, me siento afortunado de haber encontrado lo que me apasiona y de hacer de ello mi trabajo.</p>
-      <p>Mi trayectoria comienza en el año 2014 cuando después de <strong>en Multimedia por la Universidad Oberta de Catalunya</strong> comencé trabajar en proyectos de desarrollo web para diferentes clientes.</p>
-      <p>Esta experiencia profesional junto a una por la formación continua, me permite tener una amplia visión de las últimas tecnologías para el diseño y desarrollo de aplicaciones y proyectos web.</p>
-      <p>Si hay algo que me caracteriza es que me involucro al 100% en todo lo que hago. Soy trabajador y perfeccionista e inconformista. Y pongo toda la energía que me aporta trabajar de aquello que tanto me entusiasma.</p>
+      <div class="section__content">
+        <div>
+          <img class="img__avatar--rounded"src="/assets/images/yo.jpg" alt="">
+        </div>
+        <div>
+          <p>Soy especialista en el diseño y desarrollo de aplicaciones web. Sin duda, me siento afortunado de haber encontrado lo que me apasiona y de hacer de ello mi trabajo.</p>
+          <p>Mi trayectoria comienza en el año 2014 cuando después de <strong>en Multimedia por la Universidad Oberta de Catalunya</strong> comencé trabajar en proyectos de desarrollo web para diferentes clientes.</p>
+          <p>Esta experiencia profesional junto a una por la formación continua, me permite tener una amplia visión de las últimas tecnologías para el diseño y desarrollo de aplicaciones y proyectos web.</p>
+          <p>Si hay algo que me caracteriza es que me involucro al 100% en todo lo que hago. Soy trabajador y perfeccionista e inconformista. Y pongo toda la energía que me aporta trabajar de aquello que tanto me entusiasma.</p>
+        </div>
+    </div>  
   </section>
-  <section id="formacion" class="formacion">
-    <header>
+
+  <section id="formacion" class="section formacion">
+    <header class="header__section">
+      <i class="fas fa-graduation-cap header__icon header__icon--size"></i>
       <h2>Formación</h2>
     </header>
+    <ul>
+      <li>Master en desarrollo de sitions y aplicaciones web
+        <p>Universidad Oberta de Catalunya - 2020</p>
+      </li>
+      <li>Graduado en Multimedia
+        <p>Universidad Oberta de Catalunya - 2014</p>
+      </li>
+      <li>Desarrollador de productos editoriales multimedia
+        <p>CIFO Hospitalet de Llobregat - 2013</p>
+      </li>
+    </ul>
   </section>
-  <section id="habilidades" class="habilidades">
-    <header>
+
+  <section id="habilidades" class="section habilidades">
+    <header class="header__section">
+      <i class="fas fa-head-side-virus header__icon header__icon--size"></i>
       <h2>Habilidades</h2>
     </header>
+    <div class="header__section section__skils">
+      <div>
+        <div class="card">
+          <div class="card__content">
+            <h3 class="card__title">Lenguajes</h3>
+            <p>HTML, CSS, JavaScript, PHP </p>
+              <div>
+                <i class="fas fa-star star--color"></i>
+                <i class="fas fa-star star--color"></i>
+                <i class="fas fa-star star--color"></i>
+                <i class="fas fa-star star--color"></i>
+                <i class="fas fa-star star--colorgray"></i> 
+              </div>
+          </div>
+        </div>    
+      </div>
+      <div>
+        <div class="card">
+          <div class="card__content">
+            <h3 class="card__title">Edición gráfica</h3>
+            <p>Illustrator, Photoshop, After Efects </p>
+              <div>
+                <i class="fas fa-star star--color"></i>
+                <i class="fas fa-star star--color"></i>
+                <i class="fas fa-star star--color"></i>
+                <i class="fas fa-star star--color star--colorgray"></i>
+                <i class="fas fa-star star--colorgray"></i> 
+              </div>
+          </div>
+        </div>  
+      </div>
+      <div>
+        <div class="card">
+          <div class="card__content">
+            <h3 class="card__title">Frameworks</h3>
+            <p>Wordpress, Bootstrap, Angular</p>
+              <div>
+                <i class="fas fa-star star--color"></i>
+                <i class="fas fa-star star--color"></i>
+                <i class="fas fa-star star--color"></i>
+                <i class="fas fa-star star--color"></i>
+                <i class="fas fa-star star--colorgray"></i> 
+              </div>
+          </div>
+        </div>  
+      </div>
+    </div>
   </section>
-  <section id="portfolio" class="porfolio">
-    <header>
-      <h2>Portfolio</h2>
-    </header>
-  </section>
-  <section id="contacto" class="contacto">
-    <header>
+  <section id="contacto" class="section contacto">
+    <header class="header__section">
+      <i class="fas fa-at header__icon header__icon--size"></i>
       <h2>Contacto</h2>
     </header>
+    <form class="form" action="">
+      <div>
+        <div>
+          <label for="name" class="form__label">Nombre</label>
+        </div>
+        <div>
+            <input type="text" class="form__input" placeholder="Introduce tu nombre" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <label for="subject" class="form__label">Asunto</label>
+        </div>
+        <div>
+          <input type="text" class="form__input" placeholder="Asunto de tu mensaje">
+        </div>
+      </div>  
+      <div>
+        <div>
+          <label for="email" class="form__label">Email</label>
+        </div>
+        <div>
+          <input type="text" class="form__input" placeholder="Introduce tu email">
+        </div>
+      </div>
+      <div>
+        <div>
+          <label for="message" class="form__label">Mensaje</label>
+        </div>
+        <div>
+          <input type="textarea" class="form__input">
+        </div>
+      </div>
+      <div>
+        <input type="submit" class="form__input" value="Enviar">
+      </div>
+    </form>
   </section>
   </body>
   <footer>
