@@ -31,6 +31,101 @@ footer {
 }
 
 .header {
+  position: relative;
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.nav__menu {
+  float: right;
+
+  @media (max-width: $mediaTablets) {
+    display: none;
+  }
+}
+
+.nav__menu--display {
+  @media (max-width: $mediaTablets) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.nav__menu--display ul {
+  @media (max-width: $mediaTablets) {
+    display: block;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__link {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav__link--style {
+  text-transform: uppercase;
+}
+
+.nav__link--style:hover {
+  border-bottom: 1px solid #ff0;
+}
+
+.nav__icon {
+  @media (min-width: $mediaTablets) {
+    display: none;
+  }
+
+  @media (max-width: $mediaTablets) {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    float: right;
+    cursor: pointer;
+  }
+}
+
+.nav__icon::before {
+  @media (max-width: $mediaTablets) {
+    font-family: $font-family-awesome;
+    content: "\f0c9";
+    font-weight: 900;
+  }
+}
+
+.nav__icon,
+.active::before {
+  @media (max-width: $mediaTablets) {
+    font-family: $font-family-awesome;
+    content: "\f00d";
+    font-weight: 900;
+  }
+}
+
+/*
+.header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -65,10 +160,7 @@ footer {
 .nav__link--style:hover {
   border-bottom: 1px solid #ff0;
 }
-
-.nav__icon {
-  display: none;
-}
+*/
 
 /* cuerpo */
 

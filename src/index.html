@@ -13,8 +13,9 @@
   <body>
     <header class="header">
       <div class="nav">
+        <div class="toogle"></div>
+        <label for="menuToggle" class="nav__icon"></label>
         <nav class="nav__menu">
-          <!--<label for="menuToggle" class="nav__icon"><i class="fa fa-bars"></i></label>-->
           <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link nav__link--style" href="#sobremi">Sobre mi</a>
@@ -31,6 +32,7 @@
           </ul>
         </nav>
       </div>
+      <div class="clearfix"></div>
       <div class="subtitle">
         <h1>Jordi Fuentes</h1>
         <h2>Desarrollo web profesional</h2>
@@ -172,5 +174,8 @@
   </body>
   <footer>
     <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script>
+      var menuResponsive = responsiveNav(".nav__menu");
+    </script>
   </footer>
 </html>
