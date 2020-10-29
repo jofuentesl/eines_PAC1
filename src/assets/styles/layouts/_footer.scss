@@ -1,0 +1,27 @@
+.footer__block {
+  min-height: 30px;
+  background-color: #000;
+  .footer__align--items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    @media (max-width: $mediaTablets) {
+      flex-direction: column;
+      margin-left: 15px;
+    }
+  }
+  .footer__rrss a {
+    color: #fff;
+    font-size: 1.5rem;
+    .footer__rrss--hover {
+      margin-right: 15px;
+      &:hover {
+        color: $bg-complementary;
+      }
+    }
+  }
+  .footer__rights--style {
+    color: #fff;
+  }
+}

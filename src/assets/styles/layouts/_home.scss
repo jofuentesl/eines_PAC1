@@ -33,9 +33,7 @@ footer {
   @media (max-width: $mediaTablets) {
     max-width: 100%;
     height: auto;
-    background-image: url("/assets/images/bg-mobile.jpg");
     background-size: cover;
-    position: relative;
     & > .subtitle {
       display: flex;
       flex-direction: column;
@@ -44,7 +42,7 @@ footer {
       max-width: 100%;
       margin: 0;
       .subtitle__block {
-        margin: 30px 0;
+        margin: 15px 0;
       }
     }
   }
@@ -116,8 +114,8 @@ footer {
 
   @media (max-width: $mediaTablets) {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     margin: 10px;
     float: right;
     cursor: pointer;
@@ -164,6 +162,10 @@ footer {
   display: flex column;
   max-width: 1200px;
   margin: auto;
+  
+  @media (max-width: $mediaTablets) {
+    margin: 0 15px;
+  }
 }
 
 .header__section {
@@ -194,6 +196,18 @@ footer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+
+  @media (max-width: $mediaTablets) {
+    flex-direction: column;
+  }
+}
+
+.nav__item--academic::before {
+  font-family: $font-family-awesome;
+  content: "\f00c";
+  font-weight: 900;
+  color: $bg-complementary;
+  margin-right: 15px;
 }
 
 .star--colorgray {
