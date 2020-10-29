@@ -34,6 +34,13 @@ module.exports = {
       "color-function-notation": "legacy",
       "number-leading-zero": "never",
       "color-hex-case": "lower",
-      "color-hex-length": "short"
-    }
+      "color-hex-length": "short",
+      "selector-nested-pattern": "[a-z]",
+      "rule-empty-line-before": 
+      [ "always", 
+        {
+        "except": ["inside-block"]
+        }
+    ]
   }
+}
